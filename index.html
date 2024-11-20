@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detection</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Deepfake Detection</h1>
+        <div class="section">
+            <h2>Upload Image</h2>
+            <form id="imageForm">
+                <input type="file" id="imageInput" accept="image/*" required />
+                <button type="submit">Analyze Image</button>
+            </form>
+            <div id="imageResult"></div>
+        </div>
+
+        <div class="section">
+            <h2>Analyze Tweet</h2>
+            <textarea id="tweetInput" placeholder="Enter tweet content here..." required></textarea>
+            <button id="tweetSubmit">Analyze Tweet</button>
+            <div id="tweetResult"></div>
+        </div>
+    </div>
+
+    <script src="static/scripts.js"></script>
+</body>
+</html>
